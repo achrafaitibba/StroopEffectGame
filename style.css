@@ -1,0 +1,241 @@
+
+
+body{
+    background-image: radial-gradient(rgb(81, 139, 168),rgb(38, 38, 92));
+    align-items: center;
+
+}
+
+.gameArea{
+    background-image: linear-gradient(to right,rgba(33, 33, 34, 0.637), rgb(2, 1, 1)); 
+    position: absolute;
+    top: 0;
+    height: 100%;
+    left: 35%;
+    width: 30%; 
+    box-shadow: 0 5px 60px rgba(210, 9, 9, 0.63);
+    border-radius: 15px;
+    transition: 0.8s ease;
+    display: flex;  
+    justify-content: center;
+    
+}
+
+.gameArea p{
+    position: absolute;
+    color: rgb(21, 0, 255);
+    font-size: 4em;
+    text-shadow: 0 10px 50px  currentColor;          
+}
+#counter{
+    position: absolute;
+    top: 120px;
+    color: rgb(255, 0, 0);
+}
+#counter p{
+    position: relative;
+    top: 180px;
+    font-size: 35px;
+    border-radius: 15px;
+    text-shadow: 0 10px 50px rgb(255, 0, 0);  
+    }
+#scoreP{
+    position: absolute;
+    bottom: 120px;
+    left: 5%;
+    font-size: 2.8em;
+    text-shadow: 0 10px 50px rgb(255, 0, 0);
+}
+#score{
+    position: absolute;
+    bottom: 120px;
+    font-size: 2.8em;
+    text-shadow: 0 10px 50px rgb(255, 0, 0);
+}
+#scorePT{
+    position: absolute;
+    left: 5%;
+    bottom: 50px;
+    font-size: 2.8em;
+    text-shadow: 0 10px 50px rgb(255, 0, 0);
+}
+#scoreT{
+    position: absolute;
+    bottom: 50px;
+    font-size: 2.8em;
+    text-shadow: 0 10px 50px rgb(255, 0, 0);
+    left: 65%;
+}
+.Rejouer{
+    position: absolute;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 15px;
+    color: rgb(38, 0, 255);
+    box-shadow: 0 10px 60px rgba(255, 0, 0, 0.985);
+    left: 40%;
+    width: 20%; 
+    top: 40%;
+}
+#btn{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(26, 11, 184, 0.51);
+    height: 100%;
+    width: 100%;
+    visibility: hidden;
+}
+#btn1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(26, 11, 184, 0.51);
+    height: 100%;
+    width: 100%;
+    visibility: hidden;
+    
+}
+#btn1 p{
+    text-align: center;
+    position: absolute;
+    top: 150px;
+    font-size: 2em;
+    left: 40%;
+    width: 20%;
+    color: aliceblue;
+}
+.squares button{
+    position: absolute;
+    border-radius: 15px;
+    width: 18.75% ;
+    height:50px;
+}
+
+#red{
+    background-color: red;
+    left: 5%;  
+    box-shadow: 0 1px 20px red;
+    bottom: 250px;
+}
+#blue{
+    background-color: blue;
+    left: 28.75%;
+    box-shadow: 0 1px 20px blue;
+    bottom: 250px;
+}
+#yellow{
+    background-color: yellow;
+    left: 51.5%;
+    box-shadow: 0 1px 20px yellow;
+    bottom: 250px;
+
+}
+#white{
+    background-color: white;
+    left: 74.25%;
+    box-shadow: 0 1px 20px white;
+    bottom: 250px;
+}
+.squares1 button{
+    position: absolute;
+    border-radius: 15px;
+    width: 18.75% ;
+    height:50px;
+    bottom: 33px;
+}
+#pause{
+    background-image: linear-gradient(to right,rgba(33, 33, 34, 0.637), rgba(6, 9, 49, 0.741)); 
+    left: 28.75%;  
+    box-shadow: 0 1px 20px rgba(103, 42, 187, 0.593);
+    }
+    
+#reinitialiserScore{
+    background-image: linear-gradient(to right,rgba(33, 33, 34, 0.637), rgba(6, 9, 49, 0.741)); 
+    left: 74.25%;
+    box-shadow: 0 1px 20px rgba(103, 42, 187, 0.593);
+    }
+#retour{
+    background-image: linear-gradient(to right,rgba(33, 33, 34, 0.637), rgba(6, 9, 49, 0.741)); 
+    left: 51.5%;
+    box-shadow: 0 1px 20px rgba(103, 42, 187, 0.593);
+    }  
+    #continuer{
+    background-image: linear-gradient(to right,rgba(33, 33, 34, 0.637), rgba(6, 9, 49, 0.741)); 
+    left: 5%;  
+    box-shadow: 0 1px 20px rgba(103, 42, 187, 0.593);
+    }
+@media only screen and (max-width: 520px ) and (min-width:300px){
+    
+    .gameArea{
+        background-image: linear-gradient(to right,rgba(33, 33, 34, 0.637), rgb(2, 1, 1)); 
+        position: absolute;
+        top: 0;
+        height: 100%;
+        left: 0;
+        width: 100%; 
+        box-shadow: 0 5px 60px rgba(210, 9, 9, 0.63);
+        border-radius: 15px;
+        
+        
+    }
+    
+    
+    }
+    
+   .bodyPrincipal{
+       background-image: radial-gradient(rgb(116, 50, 50),rgb(38, 38, 92));
+       position: absolute;
+       width: 100%;
+       height: 100%;
+       top: 0;
+       left: 0;
+   }
+   .cercleComplet {
+    position: absolute;
+    top: -100px;
+    left: -100px;
+  }
+  .cercle {
+    background-image: linear-gradient(to right,rgba(0, 0, 255, 0.982), rgb(255, 0, 0)); 
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    position: absolute;
+    transition: transform 0.5s linear;
+  }
+  /*-----------------------------------*/
+  .bodyPrincipal.show-nav .circle {
+    transform: rotate(-70deg);
+  }
+  
+  .circle button {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100px;
+    background: transparent;
+    border: 0;
+    font-size: 26px;
+    color: #fff;
+  }
+  
+  .circle button:focus {
+    outline: none;
+  }
+  .circle button#open {
+    left: 60%;
+  }
+  
+  .circle button#close {
+    top: 60%;
+    transform: rotate(90deg);
+    transform-origin: top left;
+  }
+  
+  .container.show-nav + nav li {
+    transform: translateX(0);
+    transition-delay: 0.3s;
+  }
+  

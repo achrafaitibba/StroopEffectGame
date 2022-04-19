@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Achraf's game</title>
+</head>
+<body>
+    <div class="bodyPrincipal">
+    <section class="gameArea">
+        <p id="color"></p>
+         <p id="counter"></p>
+         <div class="squares">
+         <button id="red" onclick=clickedRed()></button>
+         <button id="blue" onclick=clickedBlue()></button>
+         <button id="yellow" onclick=clickedYellow()></button>
+         <button id="white" onclick=clickedWhite()></button>
+        </div>
+         <p id="scoreP">Score:</p>
+         <p  id="score">0</p>
+         <p id="scorePT">Top Score:</p>
+         <p  id="scoreT">0</p>
+         <div class="squares1">
+            <button id="continuer" style="font-size: 33px;">⇦</button>
+            <button id="reinitialiserScore" style="font-size: 30px;">↻</button>
+            <button id="pause" style="font-size: 33px;">II</button>
+            <button id="retour" style="font-size: 33px;">◄</button>
+        </div>
+         
+    </section>
+   
+    <div id="btn">
+        <button class="Rejouer" onclick=rejouer()>Rejouer</button>
+    </div>
+    <div id="btn1">
+        <p>
+            Plus Rapide !!!
+        </p>
+        <button class="Rejouer" onclick=rejouerPlusRapide()>Rejouer</button>
+    </div>
+</div>
+
+</body>
+<script src="script.js"></script>
+</html>
