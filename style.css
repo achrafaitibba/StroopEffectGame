@@ -144,6 +144,13 @@ body{
     height:50px;
     bottom: 33px;
 }
+.squares1 a{
+    position: absolute;
+    border-radius: 15px;
+    width: 18.75% ;
+    height:50px;
+    bottom: 33px;
+}
 #pause{
     background-image: linear-gradient(to right,rgba(33, 33, 34, 0.637), rgba(6, 9, 49, 0.741)); 
     left: 28.75%;  
@@ -157,12 +164,14 @@ body{
     }
 #retour{
     background-image: linear-gradient(to right,rgba(33, 33, 34, 0.637), rgba(6, 9, 49, 0.741)); 
-    left: 51.5%;
     box-shadow: 0 1px 20px rgba(103, 42, 187, 0.593);
+    left: 5%;
+
     }  
     #continuer{
     background-image: linear-gradient(to right,rgba(33, 33, 34, 0.637), rgba(6, 9, 49, 0.741)); 
-    left: 5%;  
+    left: 51.5%;
+
     box-shadow: 0 1px 20px rgba(103, 42, 187, 0.593);
     }
 @media only screen and (max-width: 520px ) and (min-width:300px){
