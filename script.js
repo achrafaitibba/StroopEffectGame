@@ -8,7 +8,7 @@ document.getElementById("color").style.color=colors[colorIndex1]
 var Score=0;
 var newScore=0;
 var isNotClicked=0;
-//var t=4;
+var t=3;
 var myTimeout= setTimeout(counterEnds,1000);
 
 function counterEnds(){
@@ -44,7 +44,7 @@ function pause(){
         document.getElementById("score").innerHTML=0;
         Score=0
         changeColor();
-        t=4
+        t=3
         counterEnds()             
     }
     
@@ -54,7 +54,7 @@ function pause(){
         Score=0
         changeColor();
         isNotClicked=0;
-        t=4
+        t=3
         counterEnds()                    
     }
     function changeColor(){
@@ -70,7 +70,7 @@ function clickedRed(){
        changeColor(); 
        Score++;
        document.getElementById("score").innerHTML=Score;
-       t=4             
+       t=3             
     }else{
         if(Score>newScore){
             newScore=Score;
@@ -91,7 +91,7 @@ function clickedBlue(){
      changeColor(); 
      Score++;
      document.getElementById("score").innerHTML=Score;
-     t=4
+     t=3
     }else{
         if(Score>newScore){
             newScore=Score;
@@ -111,7 +111,7 @@ function clickedYellow(){
       changeColor();  
       Score++;
       document.getElementById("score").innerHTML=Score;
-      t=4
+      t=3
 
     }else{
         if(Score>newScore){
@@ -134,7 +134,7 @@ function clickedWhite(){
       changeColor(); 
       Score++;
       document.getElementById("score").innerHTML=Score;
-      t=4
+      t=3
  
     }else{
         if(Score>newScore){
@@ -151,13 +151,3 @@ function clickedWhite(){
         
     }
 }
-
-
-
-const open = document.getElementById('open')
-const close = document.getElementById('close')
-const container = document.querySelector('.bodyPrincipal')
-
-open.addEventListener('click', () => container.classList.add('show-nav'))
-
-close.addEventListener('click', () => container.classList.remove('show-nav'))
