@@ -152,15 +152,7 @@
   height: 50px;
   bottom: 33px;
 }
-#pause {
-  background-image: linear-gradient(
-    to right,
-    rgba(33, 33, 34, 0.637),
-    rgba(6, 9, 49, 0.741)
-  );
-  left: 28.75%;
-  box-shadow: 0 1px 20px rgba(103, 42, 187, 0.593);
-}
+
 
 #reinitialiserScore {
   background-image: linear-gradient(
@@ -180,16 +172,7 @@
   box-shadow: 0 1px 20px rgba(103, 42, 187, 0.593);
   left: 5%;
 }
-#continuer {
-  background-image: linear-gradient(
-    to right,
-    rgba(33, 33, 34, 0.637),
-    rgba(6, 9, 49, 0.741)
-  );
-  left: 51.5%;
 
-  box-shadow: 0 1px 20px rgba(103, 42, 187, 0.593);
-}
 .navBar a {
   color: rgb(213, 214, 215);
   text-decoration: none;
@@ -353,20 +336,81 @@ body {
   visibility: hidden;
 }
 
-@media (max-width: 750px) and (min-width: 200px) {
+/*/////////////Responsive Espace de jeu/////////////*/
+
+@media only screen and (max-height:600px)   {
+  
+  .gameArea p {
+    
+    font-size: 2em;
+  }
+  #counter {
+    top: 80px;
+  }
+  
+  #scoreP {
+    bottom: 100px;
+    left: 10%;
+    font-size: 2.8em;
+  }
+  #score {
+    bottom: 100px;
+    font-size: 2.8em;
+  }
+  #scorePT {
+    left: 10%;
+  }
+  #scoreT {
+    font-size: 2.8em;
+    left: 65%;
+  }
+  .Rejouer {
+    height: 40px;
+    font-size: 18px;
+    width: 20%;
+    top: 55%;
+  }
+  
+   #btn1 p {
+    
+    font-size: 1.5em;
+  
+  }
+  .squares button {
+    width: 16%;
+  }
+  
+  #red {
+    left: 7%;
+  }
+  #blue {
+    left: 29.75%;
+  }
+  #yellow {
+    
+    left: 53.5%;
+  
+  }
+  #white {
+    
+    left: 76.25%;
+    
+  }
+  .squares1 button {
+    
+    width: 15%;
+    
+  }
+  .squares1 a {
+    
+    width: 16%;
+    
+  }
+}
+@media (max-width: 750px)  {
   .gameArea {
-    background-image: linear-gradient(
-      to right,
-      rgba(33, 33, 34, 0.637),
-      rgb(2, 1, 1)
-    );
-    position: absolute;
-    top: 0;
-    height: 100%;
     left: 0;
     width: 100%;
-    box-shadow: 0 5px 60px rgba(210, 9, 9, 0.63);
-    border-radius: 15px;
   }
   .nav {
     visibility: hidden;
