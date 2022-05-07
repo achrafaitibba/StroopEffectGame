@@ -26,20 +26,15 @@ function counterEnds(){
         
     }
 }
-function reintialiser(){
-    window.location.reload()
-}
-function continuer(){
-    
-    document.getElementById("score").innerHTML=Score;
-    document.getElementById("scoreT").innerHTML=Score;
-  }
-function pause(){
-  document.getElementById("counter").innerHTML=t;
-  myTimeout= setTimeout(pause,100000);
-}
+
 
     function rejouerPlusRapide(){
+        if(Score>newScore){
+            newScore=Score;
+        }else{
+            newScore=newScore;
+        }
+        document.getElementById("scoreT").innerHTML=newScore;
         document.getElementById("btn1").style.visibility = "hidden";
         document.getElementById("score").innerHTML=0;
         Score=0
@@ -151,3 +146,14 @@ function clickedWhite(){
         
     }
 }
+
+function reintialiser(){
+    window.location.reload()
+}
+function continuer(){
+    
+    document.getElementById("score").innerHTML=Score;
+    document.getElementById("scoreT").innerHTML=Score;
+  }
+
+  

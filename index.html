@@ -5,12 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/navbars/"> 
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <title>Effet Stroop</title>
 </head>
 <body> 
   
     <div class="bodyPrincipal">
-     <div class="nav">
+     <div class="nav" >
       <div class="home">
         <a href="index.html">Accueil</a>
 
@@ -24,6 +27,40 @@
       <a href="game.html">Tester</a>
       </div>
   </div>
+  
+  <nav class="navbar navbar-dark bg-black p-2 text-black bg-opacity-10" aria-label="First navbar example" id="navBarBoot" style="z-index: 1; ">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Accueil</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navbarsExample01">
+          <ul class="navbar-nav me-auto mb-2">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="definition.html">Definition</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="histoire.html">Histoire</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="exemple.html">Exemple</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="neuroanatomie.html">Neuroanatomie</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="emotionnellement.html">Emotionnellement</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="game.html">Tester</a>
+            </li>           
+          </ul>
+          
+        </div>
+      </div>
+    </nav>
   </div>
     <div class="accueil">
           <h2>Salut,je suis Achraf Ait Ibba, je vous presente un site qui represente l'effet de Stroop. <br><span>Effet Stroop</span></h2>
@@ -34,6 +71,7 @@
              
     </div> 
   
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 <script src="script.js"></script>
