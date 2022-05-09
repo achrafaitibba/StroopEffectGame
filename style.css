@@ -227,6 +227,7 @@
   background-color: rgba(0, 255, 255, 0);
   border-radius: 12px;
   width: fit-content;
+  pointer-events: all;
 }
 #tester a {
   text-decoration: none;
@@ -240,7 +241,9 @@
   color: rgb(251, 251, 251);
   font-family: Arial, Helvetica, sans-serif;
 }
-
+.accueil{
+  pointer-events: none;
+}
 .accueil h2 {
   position: absolute;
   color: rgb(172, 153, 130);
@@ -254,6 +257,7 @@
   font-size: 4em;
   font-weight: 600;
   text-shadow: 0 10px 50px rgba(0, 153, 255, 0.72);
+  z-index: -99;
 }
 
 .accueil h3 {
@@ -335,7 +339,14 @@ body {
 #navBarBoot {
   visibility: hidden;
 }
+#textIndex.opened{
+opacity: 0.1;
+}
 
+
+#textIndex1.opened{
+  opacity: 0.1;
+  }
 /*/////////////Responsive Espace de jeu/////////////*/
 
 @media only screen and (max-height:600px)   {

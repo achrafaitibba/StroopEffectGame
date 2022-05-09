@@ -1,3 +1,15 @@
+var txt=document.getElementById("textIndex");
+ var txt1=document.getElementById("textIndex1");
+ var teste=document.getElementById("tester");
+  function test(){
+    console.log(txt+txt1)
+    txt.classList.toggle("opened")
+    txt1.classList.toggle("opened")
+
+  }
+
+
+
 const colors = ["red", "blue", "yellow", "white"];
 const colors1 = ["rouge", "bleu", "jaune", "blanc"];
 var colorIndex = Math.floor(Math.random() * 4);
@@ -8,7 +20,7 @@ document.getElementById("color").style.color = colors[colorIndex1];
 var Score = 0;
 var newScore = 0;
 var isNotClicked = 0;
-var t = 3;
+var t = 2;
 var myTimeout = setTimeout(counterEnds, 1000);
 
 function counterEnds() {
@@ -34,7 +46,7 @@ function rejouerPlusRapide() {
   document.getElementById("score").innerHTML = 0;
   Score = 0;
   changeColor();
-  t = 3;
+  t = 2;
   counterEnds();
 }
 
@@ -44,7 +56,7 @@ function rejouer() {
   Score = 0;
   changeColor();
   isNotClicked = 0;
-  t = 3;
+  t = 2;
   counterEnds();
 }
 function changeColor() {
@@ -59,7 +71,7 @@ function clickedRed() {
     changeColor();
     Score++;
     document.getElementById("score").innerHTML = Score;
-    t = 3;
+    t = 2;
   } else {
     if (Score > newScore) {
       newScore = Score;
@@ -80,7 +92,7 @@ function clickedBlue() {
     changeColor();
     Score++;
     document.getElementById("score").innerHTML = Score;
-    t = 3;
+    t = 2;
   } else {
     if (Score > newScore) {
       newScore = Score;
@@ -99,7 +111,7 @@ function clickedYellow() {
     changeColor();
     Score++;
     document.getElementById("score").innerHTML = Score;
-    t = 3;
+    t = 2;
   } else {
     if (Score > newScore) {
       newScore = Score;
@@ -118,7 +130,7 @@ function clickedWhite() {
     changeColor();
     Score++;
     document.getElementById("score").innerHTML = Score;
-    t = 3;
+    t = 2;
   } else {
     if (Score > newScore) {
       newScore = Score;
@@ -140,3 +152,4 @@ function continuer() {
   document.getElementById("score").innerHTML = Score;
   document.getElementById("scoreT").innerHTML = Score;
 }
+
