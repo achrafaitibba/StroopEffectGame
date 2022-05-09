@@ -1,0 +1,1 @@
+Pour executer ce projet , il faut l'executer en live server (j'ai utiliser bootstrap online)

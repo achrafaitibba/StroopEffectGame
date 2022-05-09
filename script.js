@@ -152,4 +152,3 @@ function continuer() {
   document.getElementById("score").innerHTML = Score;
   document.getElementById("scoreT").innerHTML = Score;
 }
-
